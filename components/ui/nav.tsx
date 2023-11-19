@@ -13,7 +13,7 @@ export default function Nav() {
       <ButtonGroup
         color="primary"
         variant="shadow"
-        className="flex flex-row gap-[1px] mx-auto sm:mx-0"
+        className="flex flex-row  mx-auto sm:mx-0"
       >
         <Button
           as={Link}

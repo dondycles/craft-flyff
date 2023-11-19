@@ -25,13 +25,20 @@ export default function Home() {
               alt="Magician"
               className="w-full max-w-[300px] h-auto hidden md:block"
             />
-
-            <Image
-              id="Flyff_2"
-              src={Flyff_2}
-              alt="Flyff"
-              className="w-full max-w-[400px] h-auto my-auto"
-            />
+            <div className="flex flex-col justify-center items-center my-auto h-full pb-4">
+              <Image
+                id="Flyff_2"
+                src={Flyff_2}
+                alt="Flyff"
+                className="w-full max-w-[400px] h-auto "
+              />
+              <p className="text-center text-white font-black flex flex-col drop-shadow-sm">
+                <span className="text-3xl">BRING MEMORIES MMORPG</span>
+                <span className="text-5xl text-primary">
+                  TO THE NEW ERA PLAY TO EARN
+                </span>
+              </p>
+            </div>
             <Image
               id="Crackshooter_F"
               src={Crackshooter_F}
