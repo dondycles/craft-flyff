@@ -1,22 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Inter", sans-serif;
-}
-
-a {
-  color: #84309c;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
-  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body {
-  color: #e7e8e8;
-  background: #070707;
+#Colosseum_2 {
+  --parallax-speed: 90;
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+
+#Flyff_2 {
+  --parallax-speed: 150;
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+
+#Magician_F_3 {
+  --parallax-speed: 25;
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+
+#Crackshooter_F {
+  --parallax-speed: 25;
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+#CoralIsland_4 {
+  --parallax-speed: 25;
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+
+@keyframes parallax {
+  to {
+    transform: translateY(calc(var(--parallax-speed) * 1%));
+  }
 }
